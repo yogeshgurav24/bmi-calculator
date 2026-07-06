@@ -1,0 +1,65 @@
+:root {
+    --bg-color: #121212;
+    --card-bg: #1e1e1e;
+    --text-color: #ffffff;
+    --primary-color: #00adb5;
+    --primary-hover: #007a80;
+    --input-bg: #2d2d2d;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: var(--card-bg);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    width: 350px;
+}
+
+h2 { text-align: center; margin-bottom: 24px; color: var(--primary-color); }
+.input-group { margin-bottom: 16px; }
+label { display: block; margin-bottom: 6px; font-size: 14px; }
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 6px;
+    border: 1px solid #444;
+    background-color: var(--input-bg);
+    color: #fff;
+}
+.gender-radio { display: flex; gap: 15px; margin-top: 5px; }
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+button:hover { background-color: var(--primary-hover); }
+.result-card {
+    margin-top: 20px;
+    padding: 15px;
+    background: #252525;
+    border-radius: 8px;
+    text-align: center;
+    border-left: 5px solid var(--primary-color);
+}
+.hidden { display: none; }
+.bmi-value { font-size: 32px; font-weight: bold; margin: 10px 0; color: var(--primary-color); }
+.bmi-status { font-weight: bold; font-size: 18px; }
